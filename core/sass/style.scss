@@ -1,0 +1,23 @@
+// Abstract
+@import './abstract/constants';
+@import './abstract/placeholders';
+@import './abstract/mixins';
+
+// Base
+@import './base/base';
+
+// Layout
+@import './layouts/wrapper';
+
+// Main components
+@import './components/main/header';
+@import './components/main/information';
+@import './components/main/registers';
+@import './components/main/news';
+@import './components/main/documents';
+@import './components/main/questions';
+@import './components/main/footer';
+
+// Secondary components
+@import './components/authorization/authorization';
+@import './components/personal/personal';

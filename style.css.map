@@ -1,0 +1,23 @@
+{
+    "version": 3,
+    "mappings": "AIIA,AFAA,IEAI,CFAE;EACJ,WAAW,EAAE,qBAAqB;CACnC;;AEND,AAAA,IAAI,CAAC;EACH,SAAS,EAAE,IAAI;CAChB;;AAED,AAAA,IAAI,CAAC;EDHH,SAAS,ECKU,MAAM;EDJzB,WAAW,ECIgB,GAAG;EAC9B,gBAAgB,EHLC,OAAO;CGMzB;;ACRD,AAAA,QAAQ,CAAC;EACP,QAAQ,EAAE,QAAQ;EAClB,SAAS,EJFK,MAAM;EIGpB,MAAM,EAAE,MAAM;CACf",
+    "sources": [
+        "core/sass/style.scss",
+        "core/sass/abstract/_constants.scss",
+        "core/sass/abstract/_placeholders.scss",
+        "core/sass/abstract/_mixins.scss",
+        "core/sass/base/_base.scss",
+        "core/sass/layouts/_wrapper.scss",
+        "core/sass/components/main/_header.scss",
+        "core/sass/components/main/_information.scss",
+        "core/sass/components/main/_registers.scss",
+        "core/sass/components/main/_news.scss",
+        "core/sass/components/main/_documents.scss",
+        "core/sass/components/main/_questions.scss",
+        "core/sass/components/main/_footer.scss",
+        "core/sass/components/authorization/_authorization.scss",
+        "core/sass/components/personal/_personal.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
