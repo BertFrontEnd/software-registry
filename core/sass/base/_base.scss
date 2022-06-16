@@ -8,16 +8,6 @@ body {
   background-color: $primary-bg-color;
 }
 
-input {
-  outline: none;
-  border: none;
-  @include font-size(1.4rem, 500);
-
-  &::placeholder {
-    color: $placeholder-text-color;
-  }
-}
-
 h1 {
   @include font-size(4.8rem, 700);
   color: $title-text-color;
@@ -26,4 +16,14 @@ h1 {
 h2 {
   @include font-size(3.6rem, 700);
   color: $title-text-color;
+}
+
+input {
+  outline: none;
+  border: none;
+  @include font-size(1.4rem, 500);
+
+  &::placeholder {
+    color: $placeholder-text-color;
+  }
 }

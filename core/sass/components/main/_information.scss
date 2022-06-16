@@ -10,15 +10,17 @@
   height: 100%;
   padding: 0 115px;
 
-  .information__right-side {
+  .information__left-side {
     width: 450px;
     font-size: 0;
 
-    .right-side__title {
+    .left-side__title {
       text-transform: uppercase;
+      line-height: 6rem;
+      margin-bottom: 20px;
     }
 
-    .right-side__text {
+    .left-side__text {
       @include font-size(1.8rem, 600);
       color: $paragraph-text-color;
 
@@ -26,7 +28,7 @@
         margin-bottom: 20px;
       }
 
-      &:not(.right-side__text:nth-of-type(1)) {
+      &:not(.left-side__text:nth-of-type(1)) {
         @include font-size(2rem, 600);
       }
 
@@ -39,7 +41,7 @@
       }
     }
 
-    .right-side__search-block {
+    .left-side__search-block {
       position: relative;
       @include alignment(right, center, row, nowrap);
       height: 56px;
@@ -81,7 +83,7 @@
     }
   }
 
-  .information__left-side {
+  .information__right-side {
     width: 505px;
     height: 502px;
 
