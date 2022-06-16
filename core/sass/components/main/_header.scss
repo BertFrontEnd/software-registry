@@ -53,19 +53,35 @@ header {
       padding: 12px;
       border-radius: 50%;
       background: $secondary-bg-color no-repeat center
-        url('./assets/icons/notes-calendar.svg');
+        url('./assets/icons/notes-calendar-default.svg');
       cursor: pointer;
     }
 
     .right-side__bell {
+      position: relative;
       width: 48px;
       height: 48px;
       padding: 12px;
       margin: 0 20px;
       border-radius: 50%;
       background: $secondary-bg-color no-repeat center
-        url('./assets/icons/bell.svg');
+        url('./assets/icons/bell-custom.svg');
       cursor: pointer;
+
+      &:after {
+        z-index: 9;
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include alignment(center, center, row, nowrap);
+        width: 18px;
+        height: 18px;
+        content: '4';
+        border-radius: 50%;
+        @include font-size(1.2rem, 500);
+        color: $reminder-text-color;
+        background-color: $reminder-bg-color;
+      }
     }
 
     .right-side__separation {

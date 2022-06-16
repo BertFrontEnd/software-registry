@@ -1,0 +1,64 @@
+.news {
+  width: 100%;
+  background-color: $secondary-bg-color;
+}
+
+.news__wrapper {
+  @include alignment(center, flex-start, column, nowrap);
+  padding: 80px 115px;
+
+  .news__title {
+    margin-bottom: 40px;
+  }
+
+  .news__headlines {
+    @include alignment(space-between, flex-start, row, wrap);
+    row-gap: 40px;
+    column-gap: 30px;
+    width: 100%;
+    margin-bottom: 40px;
+
+    .headlines__item {
+      @include alignment(flex-start, flex-start, column, nowrap);
+      width: 370px;
+
+      .item__link {
+        margin-bottom: 20px;
+      }
+
+      .item__date {
+        position: relative;
+        padding: 10px 0 10px 35px;
+        @include font-size(1.4rem, 500);
+        color: $paragraph-text-light-color;
+
+        &::before {
+          z-index: 9;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          width: 24px;
+          height: 24px;
+          content: '';
+          background: no-repeat center/contain
+            url('./assets/icons/notes-calendar-custom.svg');
+          transform: translateY(-50%);
+        }
+      }
+
+      .item__text-preview {
+        color: $paragraph-text-color;
+      }
+    }
+  }
+
+  .news__link {
+    align-self: center;
+    padding: 15.5px 74.5px;
+    border-radius: 5px;
+    @include font-size(1.8rem, 500);
+    color: $button-text-color;
+    text-decoration: none;
+    background-color: $button-bg-color;
+  }
+}

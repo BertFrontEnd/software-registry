@@ -18,6 +18,11 @@ h2 {
   color: $title-text-color;
 }
 
+h3 {
+  @include font-size(1.8rem, 700);
+  color: $title-text-color;
+}
+
 input {
   outline: none;
   border: none;

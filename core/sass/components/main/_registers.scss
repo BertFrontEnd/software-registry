@@ -44,6 +44,7 @@
       @include alignment(space-between, center, row, nowrap);
       column-gap: 60px;
       width: 100%;
+      border-bottom: 1px solid $pagination-border-color;
       font-size: 0;
 
       li {

@@ -24,6 +24,12 @@ h2 {
   color: #231f20;
 }
 
+h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #231f20;
+}
+
 input {
   outline: none;
   border: none;
@@ -153,18 +159,49 @@ header {
   height: 48px;
   padding: 12px;
   border-radius: 50%;
-  background: #fbfbfb no-repeat center url("./assets/icons/notes-calendar.svg");
+  background: #fbfbfb no-repeat center url("./assets/icons/notes-calendar-default.svg");
   cursor: pointer;
 }
 
 .header__wrapper .header__right-side .right-side__bell {
+  position: relative;
   width: 48px;
   height: 48px;
   padding: 12px;
   margin: 0 20px;
   border-radius: 50%;
-  background: #fbfbfb no-repeat center url("./assets/icons/bell.svg");
+  background: #fbfbfb no-repeat center url("./assets/icons/bell-custom.svg");
   cursor: pointer;
+}
+
+.header__wrapper .header__right-side .right-side__bell:after {
+  z-index: 9;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 18px;
+  height: 18px;
+  content: '4';
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #009cb4;
 }
 
 .header__wrapper .header__right-side .right-side__separation {
@@ -479,6 +516,7 @@ header {
   -webkit-column-gap: 60px;
           column-gap: 60px;
   width: 100%;
+  border-bottom: 1px solid #ededf4;
   font-size: 0;
 }
 
@@ -627,6 +665,118 @@ header {
 
 .registers__wrapper .registers__pagination .number-active {
   color: #ffffff;
+  background-color: #009cb4;
+}
+
+.news {
+  width: 100%;
+  background-color: #fbfbfb;
+}
+
+.news__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding: 80px 115px;
+}
+
+.news__wrapper .news__title {
+  margin-bottom: 40px;
+}
+
+.news__wrapper .news__headlines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 40px;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.news__wrapper .news__headlines .headlines__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 370px;
+}
+
+.news__wrapper .news__headlines .headlines__item .item__link {
+  margin-bottom: 20px;
+}
+
+.news__wrapper .news__headlines .headlines__item .item__date {
+  position: relative;
+  padding: 10px 0 10px 35px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #a8aaae;
+}
+
+.news__wrapper .news__headlines .headlines__item .item__date::before {
+  z-index: 9;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  content: '';
+  background: no-repeat center/contain url("./assets/icons/notes-calendar-custom.svg");
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.news__wrapper .news__headlines .headlines__item .item__text-preview {
+  color: #676a71;
+}
+
+.news__wrapper .news__link {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 15.5px 74.5px;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
   background-color: #009cb4;
 }
 /*# sourceMappingURL=style.css.map */
