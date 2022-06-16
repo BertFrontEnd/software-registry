@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/reset.css" />
     <link rel="stylesheet" href="./assets/font.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" type="module"></script>
     <title>Software registry</title>
   </head>
   <body>
@@ -31,5 +32,37 @@
         </div>
       </div>
     </header>
+    <section class="information">
+      <div class="information__wrapper wrapper">
+        <div class="information__right-side">
+          <h1 class="right-side__title">Реестр программного обеспечения</h1>
+          <p class="right-side__text">
+            Единый реестр программ для электронных вычислительных машин и баз
+            данных
+          </p>
+          <p class="right-side__text">
+            Включено ПО в реестр: <span class="counter">13 473</span>
+          </p>
+          <p class="right-side__text">
+            Правообладателей: <span class="counter">4 272</span>
+          </p>
+          <div class="right-side__search-block">
+            <input
+              type="text"
+              class="search-area"
+              placeholder="Искать реестр..."
+            />
+            <button class="search-button">Искать</button>
+          </div>
+        </div>
+        <div class="information__left-side">
+          <img
+            src="./assets/images/3d-office-work.png"
+            class="left-side__office-work"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
   </body>
 </html>
