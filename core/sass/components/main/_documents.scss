@@ -1,0 +1,119 @@
+.documents {
+  width: 100%;
+  background-color: $primary-bg-color;
+}
+
+.documents__wrapper {
+  @include alignment(space-between, center, column, nowrap);
+  padding: 80px 115px;
+
+  .documents__title {
+    align-self: flex-start;
+    margin-bottom: 40px;
+
+    .title__description {
+      margin-bottom: 10px;
+    }
+
+    .title__counter {
+      @include font-size(1.8rem, 600);
+      color: $paragraph-text-color;
+
+      .counter {
+        color: $counter-text-color;
+      }
+    }
+  }
+
+  .documents__table {
+    @include alignment(space-between, flex-start, column, nowrap);
+
+    .table__title,
+    .table__description {
+      @include alignment(space-between, center, row, nowrap);
+      column-gap: 74px;
+      width: 100%;
+      border-bottom: 1px solid $pagination-border-color;
+      font-size: 0;
+
+      li {
+        padding: 20px 0;
+        @include font-size(1.6rem, 500);
+        color: $table-text-color;
+
+        &:nth-child(1) {
+          width: 170px;
+        }
+
+        &:nth-child(2) {
+          width: 390px;
+        }
+
+        &:nth-child(3) {
+          width: 90px;
+        }
+
+        &:nth-child(4) {
+          width: 55px;
+        }
+
+        &:nth-child(5) {
+          width: 165px;
+        }
+      }
+    }
+
+    .table__title {
+      border-top: 1px solid $pagination-border-color;
+
+      li {
+        position: relative;
+        color: $attention-text-color;
+
+        &:last-child {
+          padding-left: 35px;
+
+          &::before {
+            z-index: 9;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            content: '';
+            background: no-repeat center/cover
+              url('./assets/icons/paper-custom.svg');
+            transform: translateY(-50%) rotate(90deg);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .table__description {
+      .content-d {
+        a {
+          position: relative;
+          display: block;
+          padding-left: 35px;
+          color: $attention-text-color;
+          text-decoration: none;
+
+          &::before {
+            z-index: 9;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            content: '';
+            background: no-repeat center/cover
+              url('./assets/icons/download-custom.svg');
+            transform: translateY(-50%);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

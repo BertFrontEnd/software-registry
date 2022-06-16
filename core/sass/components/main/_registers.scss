@@ -78,15 +78,11 @@
           width: 77px;
         }
       }
-
-      .link-d {
-        a {
-          color: $attention-text-color;
-        }
-      }
     }
 
     .table__title {
+      border-top: 1px solid $pagination-border-color;
+
       li {
         position: relative;
         color: $attention-text-color;
@@ -106,6 +102,14 @@
             transform: translateY(-50%) rotate(90deg);
             cursor: pointer;
           }
+        }
+      }
+    }
+
+    .table__description {
+      .link-d {
+        a {
+          color: $attention-text-color;
         }
       }
     }
