@@ -41,7 +41,7 @@
           height: 24px;
           content: '';
           background: no-repeat center/contain
-            url('./assets/icons/notes-calendar-custom.svg');
+            url('./assets/icons/notes-calendar-default.svg');
           transform: translateY(-50%);
         }
       }
@@ -60,5 +60,14 @@
     color: $button-text-color;
     text-decoration: none;
     background-color: $button-bg-color;
+    @extend %transition;
+
+    &:hover {
+      background-color: $hover-element-color;
+    }
+
+    &:active {
+      background-color: $active-element-color;
+    }
   }
 }

@@ -98,6 +98,7 @@
           padding-left: 35px;
           color: $attention-text-color;
           text-decoration: none;
+          @extend %transition;
 
           &::before {
             z-index: 9;
@@ -111,6 +112,14 @@
               url('./assets/icons/download-custom.svg');
             transform: translateY(-50%);
             cursor: pointer;
+          }
+
+          &:hover {
+            color: $hover-element-color;
+          }
+
+          &:active {
+            color: $active-element-color;
           }
         }
       }

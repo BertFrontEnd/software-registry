@@ -110,6 +110,15 @@
       .link-d {
         a {
           color: $attention-text-color;
+          @extend %transition;
+
+          &:hover {
+            color: $hover-element-color;
+          }
+
+          &:active {
+            color: $active-element-color;
+          }
         }
       }
     }

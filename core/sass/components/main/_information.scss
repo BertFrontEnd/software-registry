@@ -79,6 +79,15 @@
         color: $button-text-color;
         background-color: $button-bg-color;
         cursor: pointer;
+        @extend %transition;
+
+        &:hover {
+          background-color: $hover-element-color;
+        }
+
+        &:active {
+          background-color: $active-element-color;
+        }
       }
     }
   }

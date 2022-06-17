@@ -1,3 +1,8 @@
+.information__wrapper .information__left-side .left-side__search-block .search-button, .registers__wrapper .registers__table .table__description .link-d a, .news__wrapper .news__link, .documents__wrapper .documents__table .table__description .content-d a {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
 body {
   font-family: 'Manrope', sans-serif;
 }
@@ -387,6 +392,14 @@ header {
   cursor: pointer;
 }
 
+.information__wrapper .information__left-side .left-side__search-block .search-button:hover {
+  background-color: #01b8d4;
+}
+
+.information__wrapper .information__left-side .left-side__search-block .search-button:active {
+  background-color: #01bedb;
+}
+
 .information__wrapper .information__right-side {
   width: 505px;
   height: 502px;
@@ -587,6 +600,14 @@ header {
   color: #009cb4;
 }
 
+.registers__wrapper .registers__table .table__description .link-d a:hover {
+  color: #01b8d4;
+}
+
+.registers__wrapper .registers__table .table__description .link-d a:active {
+  color: #01bedb;
+}
+
 .registers__wrapper .registers__pagination {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -761,7 +782,7 @@ header {
   width: 24px;
   height: 24px;
   content: '';
-  background: no-repeat center/contain url("./assets/icons/notes-calendar-custom.svg");
+  background: no-repeat center/contain url("./assets/icons/notes-calendar-default.svg");
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
@@ -781,6 +802,14 @@ header {
   color: #ffffff;
   text-decoration: none;
   background-color: #009cb4;
+}
+
+.news__wrapper .news__link:hover {
+  background-color: #01b8d4;
+}
+
+.news__wrapper .news__link:active {
+  background-color: #01bedb;
 }
 
 .documents {
@@ -949,5 +978,13 @@ header {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   cursor: pointer;
+}
+
+.documents__wrapper .documents__table .table__description .content-d a:hover {
+  color: #01b8d4;
+}
+
+.documents__wrapper .documents__table .table__description .content-d a:active {
+  color: #01bedb;
 }
 /*# sourceMappingURL=style.css.map */
