@@ -1058,4 +1058,31 @@ input::placeholder {
 .questions__wrapper .questions__description .description__item .item__text li {
   margin-bottom: 20px;
 }
+
+.footer {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.footer__copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding: 80px 115px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #c6c6c6;
+}
 /*# sourceMappingURL=style.css.map */

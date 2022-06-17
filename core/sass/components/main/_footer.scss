@@ -1,0 +1,11 @@
+.footer {
+  width: 100%;
+  background-color: $primary-bg-color;
+}
+
+.footer__copyright {
+  @include alignment(center, center, row, nowrap);
+  padding: 80px 115px;
+  @include font-size(1.4rem, 500);
+  color: $light-text-color;
+}
