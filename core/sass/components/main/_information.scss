@@ -93,8 +93,8 @@
   }
 
   .information__right-side {
-    width: 505px;
-    height: 502px;
+    min-width: 505px;
+    min-height: 502px;
 
     .left-side__office-work {
       object-fit: cover;

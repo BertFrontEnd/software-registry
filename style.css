@@ -64,7 +64,7 @@ input::placeholder {
   margin: 0 auto;
 }
 
-header {
+.header {
   width: 100%;
   height: 80px;
   background-color: #ffffff;
@@ -89,7 +89,8 @@ header {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   width: 100%;
-  padding: 20px 115px 20px 115px;
+  height: 100%;
+  padding: 0 115px 0 115px;
 }
 
 .header__wrapper .header__left-side {
@@ -237,8 +238,8 @@ header {
 }
 
 .header__wrapper .header__right-side .right-side__info .info__logo {
-  width: 48px;
-  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
   border-radius: 50%;
   background: no-repeat center url("./assets/images/user.png");
 }
@@ -401,8 +402,8 @@ header {
 }
 
 .information__wrapper .information__right-side {
-  width: 505px;
-  height: 502px;
+  min-width: 505px;
+  min-height: 502px;
 }
 
 .information__wrapper .information__right-side .left-side__office-work {
